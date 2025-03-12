@@ -1,4 +1,4 @@
-package payment; // مشخص کردن پکیج
+package payment;
 
 public class PayPalPayment implements PaymentStrategy {
     private String email;

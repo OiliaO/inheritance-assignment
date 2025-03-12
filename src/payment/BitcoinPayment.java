@@ -1,4 +1,4 @@
-package payment; // مشخص کردن پکیج
+package payment;
 
 public class BitcoinPayment implements PaymentStrategy {
     private String walletAddress;

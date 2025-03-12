@@ -7,6 +7,6 @@ public class PremiumCustomer extends Customer {
 
     @Override
     public void displayCustomerInfo() {
-        System.out.println("Premium Customer: " + super.name);
+        System.out.println("Premium Customer: " + name);
     }
 }

@@ -7,6 +7,6 @@ public class RegularCustomer extends Customer {
 
     @Override
     public void displayCustomerInfo() {
-        System.out.println("Regular Customer: " + super.name);
+        System.out.println("Regular Customer: " + name);
     }
 }

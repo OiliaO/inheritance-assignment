@@ -8,7 +8,7 @@ public class Main {
                 new PremiumCustomer("mobin")
         };
 
-        PaymentStrategy creditCardPayment = new CreditCardPayment("1234-5678-9012-3456", "Mehrdad Hasannejad");
+        PaymentStrategy creditCardPayment = new CreditCardPayment("1234-1234-1234-1234", "Mehrdad Hasannejad");
         PaymentStrategy payPalPayment = new PayPalPayment("salam@paypal.com");
         PaymentStrategy bitcoinPayment = new BitcoinPayment("aqwsed");
 
@@ -20,11 +20,12 @@ public class Main {
 
         customers[2].makePayment(payPalPayment, 500.0);
         customers[2].makePayment(bitcoinPayment, 600.0);
+        System.out.println("_________________________");
 
         for (Customer customer : customers) {
             customer.displayCustomerInfo();
             customer.showPaymentHistory();
-            System.out.println();
+            System.out.println("_________________________");
         }
     }
 }
